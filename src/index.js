@@ -85,7 +85,7 @@ class Whales extends Mammals {
   maxWeight = 200000;
 
   move() {
-    return 'I can swim'
+    return `${super.can()} swim`
   }
 
   isWhale() {
