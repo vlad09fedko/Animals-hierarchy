@@ -187,7 +187,7 @@ const echo = new Dolphin(7, 'Echo', 180, 0);
 const alice = new Human(25, 'Alice', 65, 2);
 const bob = new Human(30, 'Bob', 80, 2);
 
-const creature = [
+const creatures = [
   genericAnimal,
   testCreature,
   elephant,
@@ -248,4 +248,4 @@ function showProperties(obj) {
   }
 }
 
-creature.forEach(showProperties);
+creatures.forEach(showProperties);
