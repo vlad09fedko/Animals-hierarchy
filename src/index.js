@@ -187,12 +187,33 @@ const echo = new Dolphin(7, 'Echo', 180, 0);
 const alice = new Human(25, 'Alice', 65, 2);
 const bob = new Human(30, 'Bob', 80, 2);
 
+const creature = [
+  genericAnimal,
+  testCreature,
+  elephant,
+  cat,
+  eagle,
+  sparrow,
+  goldfish,
+  shark,
+  lion,
+  wolf,
+  blueWhale,
+  orca,
+  chimpanzee,
+  gorilla,
+  buddy,
+  max,
+  flipper,
+  echo,
+  alice,
+  bob,
+];
+
 // Demonstration of objects and their methods
 
 function showProperties(obj) {
-  const separator =
-    '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~';
-  console.log(separator);
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(obj);
   console.log(obj.move());
   console.log(obj.say());
@@ -227,27 +248,4 @@ function showProperties(obj) {
   }
 }
 
-const animals = [
-  genericAnimal,
-  testCreature,
-  elephant,
-  cat,
-  eagle,
-  sparrow,
-  goldfish,
-  shark,
-  lion,
-  wolf,
-  blueWhale,
-  orca,
-  chimpanzee,
-  gorilla,
-  buddy,
-  max,
-  flipper,
-  echo,
-  alice,
-  bob,
-];
-
-animals.forEach(showProperties);
+creature.forEach(showProperties);
