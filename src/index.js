@@ -7,16 +7,16 @@ class Animals {
   }
 
   can() {
-    return 'I can'
+    return 'I can';
   }
   move() {
-    return `${this.can()} move`
+    return `${this.can()} move`;
   }
   say() {
-    return `${this.can()} say`
+    return `${this.can()} say`;
   }
   eat() {
-    return `${this.can()} eat`
+    return `${this.can()} eat`;
   }
 
   isAnimal() {
@@ -85,7 +85,7 @@ class Whales extends Mammals {
   maxWeight = 200000;
 
   move() {
-    return `${super.can()} swim`
+    return `${super.can()} swim`;
   }
 
   isWhale() {
@@ -230,42 +230,28 @@ function showProperties(obj) {
   }
 }
 
-// Animals
-showProperties(genericAnimal);
-showProperties(testCreature);
+const animals = [
+  genericAnimal,
+  testCreature,
+  elephant,
+  cat,
+  eagle,
+  sparrow,
+  goldfish,
+  shark,
+  lion,
+  wolf,
+  blueWhale,
+  orca,
+  chimpanzee,
+  gorilla,
+  buddy,
+  max,
+  flipper,
+  echo,
+  alice,
+  bob,
+];
 
-// Mammals
-showProperties(elephant);
-showProperties(cat);
+animals.forEach(showProperties)
 
-// Birds
-showProperties(eagle);
-showProperties(sparrow);
-
-// Fish
-showProperties(goldfish);
-showProperties(shark);
-
-// Predators
-showProperties(lion);
-showProperties(wolf);
-
-// Whales
-showProperties(blueWhale);
-showProperties(orca);
-
-// Primates
-showProperties(chimpanzee);
-showProperties(gorilla);
-
-// Dog
-showProperties(buddy);
-showProperties(max);
-
-// Dolphin
-showProperties(flipper);
-showProperties(echo);
-
-// Human
-showProperties(alice);
-showProperties(bob);
