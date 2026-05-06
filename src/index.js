@@ -6,17 +6,14 @@ class Animals {
     this.limbAmount = limbAmount;
   }
 
-  can() {
-    return 'I can';
-  }
   move() {
-    return `${this.can()} move`;
+    return `I can move`;
   }
   say() {
-    return `${this.can()} say`;
+    return `I can say`;
   }
   eat() {
-    return `${this.can()} eat`;
+    return `I can eat`;
   }
 
   isAnimal() {
@@ -38,10 +35,10 @@ class Birds extends Animals {
   maxWeight = 165;
 
   move() {
-    return `${super.can()} fly`;
+    return `I can fly`;
   }
   say() {
-    return `${super.can()} sing`;
+    return `I can sing`;
   }
   eat() {
     return `${super.eat()} insects`;
@@ -57,10 +54,10 @@ class Fish extends Animals {
   maxWeight = 1000;
 
   move() {
-    return `${super.can()} swim`;
+    return `I can swim`;
   }
   say() {
-    return `${super.can()}'t say`;
+    return `I can't say`;
   }
   eat() {
     return `${super.eat()} seaweed`;
@@ -85,7 +82,7 @@ class Whales extends Mammals {
   maxWeight = 200000;
 
   move() {
-    return `${super.can()} swim`;
+    return `I can swim`;
   }
 
   isWhale() {
@@ -107,10 +104,10 @@ class Dog extends Predators {
   maxWeight = 110;
 
   move() {
-    return `${super.can()} run`;
+    return `I can run`;
   }
   say() {
-    return `${super.can()} bark`;
+    return `I can bark`;
   }
   eat() {
     return `${super.eat()}`;
@@ -126,10 +123,10 @@ class Dolphin extends Whales {
   maxWeight = 650;
 
   move() {
-    return `${super.can()} swim`;
+    return `I can swim`;
   }
   say() {
-    return `${super.can()} sing`;
+    return `I can sing`;
   }
   eat() {
     return `${super.eat()}`;
@@ -145,10 +142,10 @@ class Human extends Primates {
   maxWeight = 600;
 
   move() {
-    return `${super.can()} walk`;
+    return `I can walk`;
   }
   say() {
-    return `${super.can()} say`;
+    return `I can say`;
   }
   eat() {
     return `${super.eat()}`;
@@ -253,5 +250,4 @@ const animals = [
   bob,
 ];
 
-animals.forEach(showProperties)
-
+animals.forEach(showProperties);
